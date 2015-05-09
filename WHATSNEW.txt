@@ -1,4 +1,4 @@
---- RELEASE-15.02.02-RC3 ---
+--- RELEASE-15.02.02-RC4 ---
 This release fixes a bug that prevents revo onboard mag to work correctly.
 
 Release Notes - OpenPilot - Version RELEASE-15.02.02
