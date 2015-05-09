@@ -546,6 +546,8 @@ void OutputCalibrationPage::on_motorNeutralSlider_valueChanged(int value)
 void OutputCalibrationPage::on_servoButton_toggled(bool checked)
 {
     ui->servoButton->setText(checked ? tr("Stop") : tr("Start"));
+    // Now we set servos, motors are done (Tricopter fix)
+    ui->calibrateAllMotors->setChecked(false);
     quint16 channel   = getCurrentChannel();
     quint16 safeValue = m_actuatorSettings[channel].channelNeutral;
     onStartButtonToggle(ui->servoButton, channel, safeValue, safeValue, ui->servoCenterAngleSlider);
